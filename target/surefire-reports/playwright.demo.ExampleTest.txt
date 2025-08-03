@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: playwright.demo.ExampleTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.275 s - in playwright.demo.ExampleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.004 s - in playwright.demo.ExampleTest
