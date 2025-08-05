@@ -11,9 +11,11 @@
     <!-- Playwright Java -->
     <dependency>
         <groupId>com.microsoft.playwright</groupId>
-        <artifactId>playwright</artifactId>
-        <version>1.44.0</version>
-    </dependency>
+         <artifactId>playwright</artifactId>
+        <version>1.44.0</version> <!-- or the latest available -->
+</dependency>
+ 
+
 
     <!-- JUnit 5 -->
     <dependency>

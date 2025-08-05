@@ -3,6 +3,8 @@ package playwright.demo;
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.WaitUntilState;
 
+import java.nio.file.Paths;
+
 import org.junit.jupiter.api.*;
 
 public class FormAutomationTest {
@@ -26,14 +28,27 @@ void fillPracticeForm() {
     BrowserContext context = browser.newContext();
     Page page = context.newPage();
     
-    page.setDefaultNavigationTimeout(60000); // Fix #1
-    page.navigate("https://demoqa.com/automation-practice-form", 
-        new Page.NavigateOptions().setWaitUntil(WaitUntilState.DOMCONTENTLOADED)); // Fix #2
+    page.setDefaultNavigationTimeout(60000);
+ 
+
+    Page.NavigateOptions options = new Page.NavigateOptions();
+        
+    options.waitUntil = WaitUntilState.NETWORKIDLE; 
+    page.navigate("https://demoqa.com/automation-practice-form", options);
+
+    page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("form_debug.png")));
+
+
+
+
     
-    page.waitForSelector("#firstName"); // Fix #3
+    page.waitForSelector("#firstName"); 
     page.locator("#firstName").fill("Shwetha");
 
-    // continue with the rest of the form...
+    page.locator("#lastName").fill("Acharya");
+
+
+
     
     page.close();
     context.close();
