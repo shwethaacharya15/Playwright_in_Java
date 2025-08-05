@@ -10,10 +10,11 @@
  <dependencies>
     <!-- Playwright Java -->
     <dependency>
-        <groupId>com.microsoft.playwright</groupId>
-         <artifactId>playwright</artifactId>
-        <version>1.44.0</version> <!-- or the latest available -->
+  <groupId>com.microsoft.playwright</groupId>
+  <artifactId>playwright</artifactId>
+  <version>1.45.0</version> <!-- use latest -->
 </dependency>
+
  
 
 

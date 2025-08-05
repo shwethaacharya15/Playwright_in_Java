@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: playwright.demo.LocatorPlaygroundTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 60.496 s - in playwright.demo.LocatorPlaygroundTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.683 s - in playwright.demo.LocatorPlaygroundTest
