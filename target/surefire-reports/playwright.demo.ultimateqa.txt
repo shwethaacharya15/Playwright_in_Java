@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: playwright.demo.ultimateqa
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.946 s - in playwright.demo.ultimateqa
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.675 s - in playwright.demo.ultimateqa
