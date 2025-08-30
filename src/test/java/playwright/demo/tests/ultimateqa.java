@@ -1,4 +1,4 @@
-package playwright.demo;
+package playwright.demo.tests;
 
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.BrowserType.LaunchOptions;

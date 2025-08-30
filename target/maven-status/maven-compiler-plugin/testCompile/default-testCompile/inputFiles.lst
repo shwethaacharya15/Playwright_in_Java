@@ -1,5 +1,6 @@
-C:\Users\DK2530\java-playwright\java-playwright\src\test\java\playwright\demo\ExampleTest.java
-C:\Users\DK2530\java-playwright\java-playwright\src\test\java\playwright\demo\FormAutomationTest.java
-C:\Users\DK2530\java-playwright\java-playwright\src\test\java\playwright\demo\LocatorPlaygroundTest.java
-C:\Users\DK2530\java-playwright\java-playwright\src\test\java\playwright\demo\LoginTest.java
-C:\Users\DK2530\java-playwright\java-playwright\src\test\java\playwright\demo\ultimateqa.java
+C:\Users\DK2530\java-playwright\java-playwright\src\test\java\playwright\demo\pages\SignIn.java
+C:\Users\DK2530\java-playwright\java-playwright\src\test\java\playwright\demo\tests\ExampleTest.java
+C:\Users\DK2530\java-playwright\java-playwright\src\test\java\playwright\demo\tests\FormAutomationTest.java
+C:\Users\DK2530\java-playwright\java-playwright\src\test\java\playwright\demo\tests\LoginTest.java
+C:\Users\DK2530\java-playwright\java-playwright\src\test\java\playwright\demo\tests\ultimateqa.java
+C:\Users\DK2530\java-playwright\java-playwright\src\test\java\playwright\demo\tests\UltimateqaTest.java

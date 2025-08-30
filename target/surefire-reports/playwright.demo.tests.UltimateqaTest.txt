@@ -1,0 +1,72 @@
+-------------------------------------------------------------------------------
+Test set: playwright.demo.tests.UltimateqaTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 19.661 s <<< FAILURE! - in playwright.demo.tests.UltimateqaTest
+playwright.demo.tests.UltimateqaTest.testCreateAccount  Time elapsed: 14.07 s  <<< ERROR!
+com.microsoft.playwright.impl.TargetClosedError: 
+Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\utils\stackTrace.js:49:17)
+    at LongStandingScope._race (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\server\frames.js:919:40)
+    at async C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\server\frames.js:1008:29
+    at async ProgressController.run (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\server\progress.js:82:22)
+    at async FrameDispatcher.click (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\server\dispatchers\frameDispatcher.js:157:12)
+    at async LongStandingScope._race (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+- waiting for locator("a[href='/users/sign_up']")
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2468)
+	at playwright.demo.tests.UltimateqaTest.testCreateAccount(UltimateqaTest.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\utils\stackTrace.js:49:17)
+    at LongStandingScope._race (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\server\frames.js:919:40)
+    at async C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\server\frames.js:1008:29
+    at async ProgressController.run (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\server\progress.js:82:22)
+    at async FrameDispatcher.click (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\server\dispatchers\frameDispatcher.js:157:12)
+    at async LongStandingScope._race (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\DK2530\AppData\Local\Temp\playwright-java-8972295709055622724\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+- waiting for locator("a[href='/users/sign_up']")
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 15 more
+

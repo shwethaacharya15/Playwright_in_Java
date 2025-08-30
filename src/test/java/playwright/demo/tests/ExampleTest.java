@@ -1,4 +1,4 @@
-package playwright.demo;
+package playwright.demo.tests;
 
 import com.microsoft.playwright.*;
 import org.junit.jupiter.api.*;
