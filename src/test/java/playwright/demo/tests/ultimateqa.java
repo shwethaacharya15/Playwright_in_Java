@@ -63,6 +63,7 @@ public class ultimateqa {
 
         // page.locator("nav").getByText("Sign In").click();
         assertEquals("https://courses.ultimateqa.com/users/sign_in", page.url());
+        page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("target/screenshots/signin-failed.png")));
        
     }
 
@@ -74,6 +75,7 @@ public class ultimateqa {
        
         assertEquals("https://courses.ultimateqa.com/users/sign_in", page.url());
         assertTrue(page.locator("body").innerText().contains("Welcome"));
+        page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("target/screenshots/welcometext-failed.png")));
 
         Locator Emailfield = page.locator("input[id='user[email]']");
         Emailfield.click();
@@ -86,6 +88,7 @@ public class ultimateqa {
         Locator Emailerror = page.locator("p:has-text('Please enter a valid email address')");
         Emailerror.waitFor();
         assertEquals("Please enter a valid email address", Emailerror.innerText());
+        page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("target/screenshots/email error message-failed.png")));
     }
 
 
@@ -117,6 +120,7 @@ public class ultimateqa {
         signInLink.click(new Locator.ClickOptions().setForce(true));
         
        page.locator("a[href='/users/sign_up']").click();
+       page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("target/screenshots/signup-failed.png")));
 
 // Wait for navigation
 page.waitForURL("**/users/sign_up", new Page.WaitForURLOptions().setTimeout(60000));
